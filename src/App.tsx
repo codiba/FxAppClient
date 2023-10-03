@@ -1,10 +1,9 @@
 import React from 'react';
+import { Router } from './routes';
 
 function App() {
   return (
-    <div className="">
-      <h1 className='text-red-700'>Tailwind works</h1>
-    </div>
+    <Router/>
   );
 }
 
