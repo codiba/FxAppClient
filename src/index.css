@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
   padding: 0;
+}
+
+.cardsSection::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: rgb(71 85 105);
+}
+
+.cardsSection::-webkit-scrollbar
+{
+	width: 6px;
+    border-radius: 8px;
+    background-color: rgb(71 85 105);
+}
+
+.cardsSection::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background-color: rgb(226 232 240);
 }
