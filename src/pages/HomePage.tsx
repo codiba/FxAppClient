@@ -34,7 +34,7 @@ export const HomePage = () => {
             </button>
         </div>
         <div>
-            <button className='w-full font-bold py-3 border rounded-lg flex items-center justify-center hover:bg-gray-200 shadow-lg'>
+            <button onClick={e => navigate('/add-update')} className='w-full font-bold py-3 border rounded-lg flex items-center justify-center hover:bg-gray-200 shadow-lg'>
                 <span>+ İlan Vermek için Tıkla!</span>
             </button>
         </div>
@@ -47,13 +47,15 @@ export const HomePage = () => {
                 )
             })}
         </div>
-        <div className='flex justify-center items-center font-semibold'>
-            <span>Son kur güncelleme zamanı: 17.10.2923 14:45</span>
-        </div>
-        <div className='flex items-center justify-center font-bold underline'>
-            <button onClick={e => navigate("/about")}>
-                Hakkında
-            </button>
+        <div className=''>
+            <div className='flex justify-center items-center font-semibold'>
+                <span>Son kur güncelleme zamanı: 17.10.2923 14:45</span>
+            </div>
+            <div className='flex items-center justify-center font-bold underline'>
+                <button onClick={e => navigate("/about")}>
+                    Hakkında
+                </button>
+            </div>
         </div>
     </div>
     )
